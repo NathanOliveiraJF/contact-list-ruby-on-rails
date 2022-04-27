@@ -1,0 +1,16 @@
+<!-- object.erros.any => verifica se ha erros --->
+<% if object.errors.any? %>
+  <div class="">
+    <div class="alert alert-danger">
+    <!-- pluralize => se erros.count for mais de um ele retorna erros se nn ele retorna erro --->
+      Ops! Encontramos <%= pluralize(object.errors.count, 'erro', 'erros') %>
+      <ul>
+      <!-- full_messages => array de erros --->
+        <% object.errors.full_messages.each do |msg| %>
+          <li> <%= msg %> </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
+

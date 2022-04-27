@@ -1,0 +1,25 @@
+# chave primaria -> valor
+pt-BR:
+  hello: "Olá mundo!"
+
+  activerecord:
+    # atributos dos modulos
+    attributes:
+      user:
+        nome: "Nome"
+        email: "Email"
+        password: "Senha"
+        password_confirmation: "Confirmação da Senha"
+    # mensagens genericas dos erros
+    errors:
+      messages:
+        # mensagem de erro para campos vazios
+        blank: "não pode ser em branco"
+        # valor invalido
+        invalid: "inválido"
+        # algo ja cadastrado
+        taken: "já cadastrado"
+        confirmation: "nao é igual. Insira a mesma senha"
+        # tamanho de string, count é a validação feita na model
+        too_log: "Muito grande. Máximo de %{count} caracteres"
+        too_short: "Muito curta. Mínimo de %{count} caracteres"
