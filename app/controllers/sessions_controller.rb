@@ -14,8 +14,9 @@ class SessionsController < ApplicationController
       sign_in(user)
       # redirecionamento
       # passa  a rota show passando o usuario
+      # redireciona para lista de contatos
 
-      redirect_to user_path(user)
+      redirect_to contacts_path
     else
       # flash.now 
       # se usar só flash vai ficar persistida por mais uma requisicao

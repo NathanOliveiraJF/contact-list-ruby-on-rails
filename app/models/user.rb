@@ -18,4 +18,6 @@ class User < ApplicationRecord
     format: { with: VALID_EMAIL_REGEX }, 
     uniqueness: { case_sensetive: true }
 
+  # usuario tem mts contatos, associação
+  has_many :contacts
 end

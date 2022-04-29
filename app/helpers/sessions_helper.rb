@@ -1,5 +1,5 @@
 module SessionsHelper
-   def sign_in(:user_id) 
+   def sign_in(user_id) 
     # variavel session, disponibiliza session do browser
     # tipo um hash, cria chave => valor
     # guarda usuario na session
